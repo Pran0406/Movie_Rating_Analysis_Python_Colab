@@ -1,0 +1,69 @@
+✅ Task 6: Python Visualization
+Topic: Movie Ratings Analysis
+Project:
+Create visualizations like genre distribution, average rating per genre, most popular year, etc.
+📦 Deliverable: Visual report with 5+ charts
+
+
+==============================
+
+Rating distribution with KDE
+Rating distribution by genre — boxplot
+Vote distribution by genre — boxplot
+Budget vs Revenue with regression line
+Correlation heatmap
+Rating distribution by language — violin plot
+
+
+================================
+
+## Executive Summary
+
+This analysis examines a dataset of **650 movies** to understand patterns in genre distribution, movie ratings, release trends, popularity, geographic representation, and the relationship between ratings and commercial performance. Eight visualizations were created using Python to identify the major patterns and provide a concise view of the movie landscape represented in the dataset.
+
+### Key Findings
+
+**1. Genre Distribution**
+The dataset contains a diverse range of movie genres, with **Action being the most represented genre**, accounting for 98 movies. This indicates that the dataset has a relatively strong representation of action-oriented content compared with other genres.
+
+**2. Average Rating by Genre**
+Rating performance varies across genres. **Drama has the highest average rating at 7.61/10**, suggesting that movies in this category receive comparatively stronger audience ratings. **Horror has the lowest average rating at 6.42/10**, indicating comparatively weaker average audience reception.
+
+**3. Movies Released by Year**
+Movie representation changes considerably across release years. **2011 is the most represented year, with 33 movies** in the dataset. The distribution demonstrates that the dataset is not evenly balanced across years, which should be considered when interpreting year-based comparisons.
+
+**4. Average Rating Trend by Year**
+Average movie ratings fluctuate over the release period rather than following a consistent upward or downward pattern. This suggests that release year alone does not provide a clear explanation for differences in movie ratings. Year-level averages should therefore be interpreted alongside the number of movies available for each year.
+
+**5. Most Popular Movies by Votes**
+The popularity analysis, measured using the number of votes, highlights substantial differences between individual movies. **Dark Empire has the highest vote count, with 1,591,980 votes**, making it the most widely engaged movie in the dataset based on this measure. High vote counts indicate audience reach or engagement but do not necessarily indicate higher movie quality.
+
+**6. Geographic Distribution**
+The country analysis shows that movie production is concentrated among a smaller group of countries. The top 10 countries account for a significant share of the dataset, highlighting an uneven geographic representation. Consequently, conclusions about global movie production should be treated cautiously because countries with fewer observations may be underrepresented.
+
+**7. Rating vs. Number of Votes**
+The scatter plot shows a **very weak positive relationship between ratings and votes**, with a correlation of approximately **0.073**. This indicates that a movie receiving more votes does not necessarily receive a substantially higher rating. Popularity and audience rating therefore appear to represent different dimensions of movie performance in this dataset.
+
+**8. Revenue vs. Budget**
+The revenue-versus-budget visualization demonstrates the relationship between production investment and box-office revenue. While higher-budget movies can generate higher revenues, the distribution also contains considerable variation. Therefore, a larger production budget should not automatically be interpreted as a guarantee of stronger financial performance.
+
+### Overall Business Insight
+
+The analysis suggests that **movie popularity, audience rating, genre, release year, and financial performance are distinct factors**. Drama stands out for its strong average rating, while Action has the largest representation. Popularity, measured through votes, does not strongly correspond with ratings, emphasizing that highly visible movies are not necessarily the highest-rated movies. Similarly, financial performance varies across production budgets, indicating that investment level alone does not determine commercial success.
+
+### Dataset Limitations
+
+Several limitations should be considered when interpreting these findings:
+
+* **Sample size:** The analysis contains 650 movies, which may not be large enough to represent the entire global movie industry.
+* **Uneven representation:** Some genres, years, countries, and other categories contain more observations than others, potentially creating sampling bias.
+* **Popularity measure:** Votes are used as a proxy for popularity, but vote counts can be influenced by audience size, platform exposure, age of the movie, and marketing.
+* **Ratings:** Average ratings may be affected by differences in audience demographics, rating behavior, and the number of ratings received by each movie.
+* **Financial data:** Budget and revenue figures may not capture marketing costs, distribution expenses, inflation, regional revenue differences, or profitability.
+* **Correlation does not imply causation:** Relationships observed in the charts do not establish that one variable causes another.
+* **Missing contextual factors:** Variables such as critic reviews, streaming performance, franchise status, awards, marketing expenditure, and audience demographics are not incorporated into the analysis.
+* **Historical comparability:** Comparing movies across different years may be affected by changes in inflation, distribution models, audience behavior, and the movie industry itself.
+
+### Conclusion
+
+Overall, the analysis provides a useful snapshot of the **650 movies represented in the dataset**. The results highlight clear differences in genre popularity and ratings while showing that movie popularity and rating are only weakly related. The visualizations also demonstrate the importance of considering sample distribution and contextual factors before drawing broader conclusions. Python-based exploratory visualization provides an effective foundation for identifying these patterns and can be extended with statistical analysis or a larger, more representative dataset for deeper insights.
